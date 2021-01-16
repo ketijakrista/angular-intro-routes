@@ -1,5 +1,9 @@
-<div>
-  <p>drink-detail works!</p>
-  <p>{{ drink.id }}</p>
-  <p>{{ drink.title }}</p>
+<div class="alert alert-warning">Drink details!</div>
+<div class="card mb-2 p-2 text-center">
+  <span class="mb-2">
+    {{ drink.id + " " + drink.title }}
+  </span>
+  <a class="nav-link" [routerLink]="['/drinks']" routerLinkActive>
+    Back to all drinks
+  </a>
 </div>

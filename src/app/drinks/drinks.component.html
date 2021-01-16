@@ -1,7 +1,13 @@
-<p>Drink List!</p>
-
+<div class="alert alert-warning">
+  Drink List!
+</div>
 <div *ngFor="let drink of drinks">
-  {{ drink.id }}
-  {{ drink.title }}
-  <a [routerLink]="['/drinks/' + drink.id]">Read more</a>
+  <div class="card mb-2 p-2 text-center">
+    <span class="mb-2">
+      {{ drink.id + " " + drink.title }}
+    </span>
+    <a class="btn badge-info" [routerLink]="['/drinks/' + drink.id]">
+      Read more...
+    </a>
+  </div>
 </div>
