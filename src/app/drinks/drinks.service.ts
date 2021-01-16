@@ -25,7 +25,7 @@ export class DrinksService {
   }
 
   getDrink(id: number): Drink {
-    return this.drinks.find(it => it.id === id +5);
+    return this.drinks.find(it => it.id === id);
   }
 }
 
